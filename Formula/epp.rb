@@ -5,20 +5,20 @@
 class Epp < Formula
   desc "EPP command-line tool"
   homepage "https://github.com/onasunnymorning/eppclient"
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.1.0/eppclient_1.1.0_darwin_amd64.tar.gz"
-      sha256 "3996f3e71ec72726f248393c76af642c8958b49fb7be398f2e03eb15ee0564bb"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.2.0/eppclient_1.2.0_darwin_amd64.tar.gz"
+      sha256 "16fc3e05c55fdbe9b02525dfdc10f8ec1e0f02600dd92a99b64f00f28bc4c628"
 
       def install
         bin.install "epp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.1.0/eppclient_1.1.0_darwin_arm64.tar.gz"
-      sha256 "6ad4e39ceefbf0854fd17b37154b6629d7a18b9899bace82efab5ce4cc2dac9e"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.2.0/eppclient_1.2.0_darwin_arm64.tar.gz"
+      sha256 "463b5eec43872b2dc148a4c645980d80f4f880ba8d5f560857d36f981a810067"
 
       def install
         bin.install "epp"
@@ -28,15 +28,15 @@ class Epp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.1.0/eppclient_1.1.0_linux_amd64.tar.gz"
-      sha256 "fedbe312c4c6556bcc1da16ef2380d8f2caa12502a6ec9650eb0d870814d4a89"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.2.0/eppclient_1.2.0_linux_amd64.tar.gz"
+      sha256 "b942334449a90b10310ab299d1931de29c7a273b548f356c52b466d0278f57ef"
       def install
         bin.install "epp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.1.0/eppclient_1.1.0_linux_arm64.tar.gz"
-      sha256 "fcbb4659bed16f74d7d0fa52f287e21577a1b4d29334477795a1db0ef8110d8b"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.2.0/eppclient_1.2.0_linux_arm64.tar.gz"
+      sha256 "8500231f55491fb0f9c255d2a4bb4be9f42d57372b123431b74550cda782b979"
       def install
         bin.install "epp"
       end
