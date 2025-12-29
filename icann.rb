@@ -5,21 +5,21 @@
 class Icann < Formula
   desc "ICANN MOSAPI and RRI CLI"
   homepage "https://github.com/onasunnymorning/icann-client"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.1.2/icann-client_v0.1.2_darwin_amd64.tar.gz"
-      sha256 "1d73434319de429c97672a0ee75bf339610c02e4701909eb154b982baa0ef210"
+      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.2.0/icann-client_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "54167e8a98982d88f94aa2d8e8cecb73ac5ebe89b09cce09ab34a0c6d0e2383d"
 
       def install
         bin.install "icann"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.1.2/icann-client_v0.1.2_darwin_arm64.tar.gz"
-      sha256 "41121debe9beec05470e43b651e8835ce8f529e66c67b45bb1016cdd449cc6a4"
+      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.2.0/icann-client_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "16a02648352b1126028757c640b25f987dba8c1263d709981ecc9b704cb4106e"
 
       def install
         bin.install "icann"
@@ -29,15 +29,15 @@ class Icann < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.1.2/icann-client_v0.1.2_linux_amd64.tar.gz"
-      sha256 "3bd036cee8aa09b26a0a698a1c256f1a2bc6db7b5f7eb8f5983a8d2766c7508d"
+      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.2.0/icann-client_v0.2.0_linux_amd64.tar.gz"
+      sha256 "d5b56be201c019896d9cad90313c289cd9faa4453704c1aba1dc66125fd69c65"
       def install
         bin.install "icann"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.1.2/icann-client_v0.1.2_linux_arm64.tar.gz"
-      sha256 "138c49364213272e68e662d6490f05600b0990be29d782461d105ae1ade0e790"
+      url "https://github.com/onasunnymorning/icann-client/releases/download/v0.2.0/icann-client_v0.2.0_linux_arm64.tar.gz"
+      sha256 "778bc4aa3c16850a1da4e866bf7403753b11d4df62c91075942721cd6dd3a762"
       def install
         bin.install "icann"
       end
