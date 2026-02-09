@@ -5,20 +5,20 @@
 class PremiumListMaker < Formula
   desc "Tool for managing domain label lists and generating premium pricing"
   homepage "https://github.com/onasunnymorning/premium-list-maker"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.4/premium-list-maker_0.0.4_darwin_amd64.tar.gz"
-      sha256 "4a606cdc35cec489ca555e94c474da00a105d03af7dfcb9f64cd8e9c33571cfc"
+      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.5/premium-list-maker_0.0.5_darwin_amd64.tar.gz"
+      sha256 "c318f01d0b20cfc3e0fda92acde0cd2134a706c39de840113d085c7d3f2ca4a5"
 
       def install
         bin.install "premium-list-maker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.4/premium-list-maker_0.0.4_darwin_arm64.tar.gz"
-      sha256 "43b191f39d508d8745a4dcbfb04714ba90e2fb20f1472a13f70ce58735efb985"
+      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.5/premium-list-maker_0.0.5_darwin_arm64.tar.gz"
+      sha256 "4dfff1ce5aeaae1af2b39d1533de19bc9f18c33efb730977efff457e033b8a43"
 
       def install
         bin.install "premium-list-maker"
@@ -28,15 +28,15 @@ class PremiumListMaker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.4/premium-list-maker_0.0.4_linux_amd64.tar.gz"
-      sha256 "da781220a7b842f5d9754d19236ed630abd018f7cb3cfc3719978eb0e53ea2fc"
+      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.5/premium-list-maker_0.0.5_linux_amd64.tar.gz"
+      sha256 "019dadeb40be56b042bb136d9d7d1c3f96ec2c509f168509b07ea9fb8dbf2df3"
       def install
         bin.install "premium-list-maker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.4/premium-list-maker_0.0.4_linux_arm64.tar.gz"
-      sha256 "7aa958b224eef2bd6c6ec359e74acfbea9edcc47e85caa292a5ed7d647a78d31"
+      url "https://github.com/onasunnymorning/premium-list-maker/releases/download/v0.0.5/premium-list-maker_0.0.5_linux_arm64.tar.gz"
+      sha256 "f1bd3170033cb9366ca6157cdb7cec63c920a1a7cce79969cb0d78b1504a9ea6"
       def install
         bin.install "premium-list-maker"
       end
