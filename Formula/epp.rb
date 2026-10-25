@@ -5,20 +5,20 @@
 class Epp < Formula
   desc "EPP command-line tool"
   homepage "https://github.com/onasunnymorning/eppclient"
-  version "1.5.0"
+  version "1.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.0/eppclient_1.5.0_darwin_amd64.tar.gz"
-      sha256 "8b6158ec4854a71866f15c859d11cb1b14a8f075ed9977273de04f33f5422efb"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.1/eppclient_1.5.1_darwin_amd64.tar.gz"
+      sha256 "df2c5620be0210898ba32c095f1d86c18b9a827f72adca92e063374a9ba2d931"
 
       define_method(:install) do
         bin.install "epp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.0/eppclient_1.5.0_darwin_arm64.tar.gz"
-      sha256 "44af551916464cedda7f3d7a3227420c3f9113e9bf58534954173e971c6b3098"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.1/eppclient_1.5.1_darwin_arm64.tar.gz"
+      sha256 "8ad30f467dafdd7c09bcf6819e0f903140ee134f255001ff2130fe33c6224710"
 
       define_method(:install) do
         bin.install "epp"
@@ -28,15 +28,15 @@ class Epp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.0/eppclient_1.5.0_linux_amd64.tar.gz"
-      sha256 "d2c1464761c15f55835f6fd9abf4a344340f7c4bc2929528b4562996b14d975e"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.1/eppclient_1.5.1_linux_amd64.tar.gz"
+      sha256 "4de2dfc466150bb183c7e9f805abd8d48e5dec3ce76e64294bf6b8bf07b793e9"
       define_method(:install) do
         bin.install "epp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.0/eppclient_1.5.0_linux_arm64.tar.gz"
-      sha256 "c8702e756d4cb2bd2d8cd2e81a5fa96da7395b791325819e0607feb3a88d8f1b"
+      url "https://github.com/onasunnymorning/eppclient/releases/download/v1.5.1/eppclient_1.5.1_linux_arm64.tar.gz"
+      sha256 "f539b3134045f3536eed51526a3f535a4f8f6e4147f9891076809c898b54daf1"
       define_method(:install) do
         bin.install "epp"
       end
